@@ -1,0 +1,65 @@
+body { 
+    background-color: black;
+    overflow: hidden;
+}
+
+.fullscreen { 
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}  
+
+.centered {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#loadscreen { 
+    background-image: url("./assets/loading5.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+#videoplayer {
+    cursor: pointer;
+    z-index: 10;
+}
+
+#backgroundPlayerContainer {
+    filter: blur(100px); 
+    z-index: 1;
+}
+
+#backgroundPlayer {
+    height: 100vh;
+}
+
+#intro_menu{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.336);
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+    z-index: 1000000;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+spacer { 
+    height: 10px;
+}
+h1, p, h2 { 
+    margin: 0;
+}

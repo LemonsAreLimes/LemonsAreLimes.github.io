@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="./main.js"></script>
+    <script src="./links.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>NeaveIA</title>
+</head>
+<body>
+    <div class="fullscreen centered" id="intro_screen" style="display: none;">
+        <div id="intro_menu">
+            <h1>NeaveIA: Internet Archive</h1>
+            <p>plays random videos from Internet Archive</p>
+            <spacer></spacer>
+            <h2>Controls</h2>
+            <p>M: Mute</p>
+            <p>Arrow up: Volume up</p>
+            <p>Arrow down: Volume down</p>
+            <p>Arrow left: Seek -5s</p>
+            <p>Arrow right: Seek +5s</p>
+            <p>Space: Pause</p>
+            <p>Esc: Settings</p>
+            <p>Enter: Goto media page</p>
+            <spacer></spacer>
+            <h2>Click here to get new random videos!</h2>
+        </div>
+    </div>
+    <div id="loadscreen" class="fullscreen"></div>
+    <video 
+        id="videoplayer"
+        class="fullscreen"
+        autoplay
+        data-clickDisabled="false">
+    </video>
+    <div class="fullscreen centered" id="backgroundPlayerContainer">
+        <canvas id="backgroundPlayer"></canvas>
+    </div>
+</body>
+</html>
